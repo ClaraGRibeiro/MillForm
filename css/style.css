@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+*{
+    font-family: "Roboto";
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    margin-bottom: 100px;
+    color: #181818;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+h3{
+    font-size: 24px;
+    text-align: center;
+    margin: 30px 0;
+}
+p, a, label{
+    font-size: 20px;
+}
+
+.start, .submit, .reset, .button-default{
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.start, .submit{
+    color: green;
+    border-color: green;
+}
+
+.start:hover, .submit:hover{
+    color: white;
+    background-color: green;
+}
+
+.reset{
+    color: red;
+    border-color: red;
+}
+
+.reset:hover{
+    color: white;
+    background-color: red;
+}
+
+.button-default{
+    color: #181818;
+    border-color: #181818;
+}
+
+.button-default:hover{
+    color: white;
+    background-color: #181818;
+}
+
+form, .container{
+    border-radius: 10px;
+    padding: 20px;
+    width: 1200px;
+    max-width: calc(100% - 20px);
+    margin: 40px auto;
+}
+
+.form-group{
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.form-group-ex{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.options{
+    max-width: calc(100% - 20px);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: #707070 1px dashed;
+}
+
+.radio-size3{
+    width: 36px;
+    max-width: 24;
+    height: 36px;
+    max-height: 24;
+}
+.radio-size2{
+    width: 30px;
+    max-width: 20;
+    height: 30px;
+    max-height: 20;
+}
+.radio-size1{
+    width: 26px;
+    max-width: 16;
+    height: 26px;
+    max-height: 16;
+}
+
+.buttons{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #999;
+    transition: 0.2s;
+}
+input:checked {
+    background-color: #999;
+    border-color: #707070;
+}
+
+.radio-label{
+    font-size: 18px;
+    color: #707070;
+}
+
+label{
+    text-align: center;
+}
+
+#barChart, #radarChart, #pieChart{
+    margin: 0 auto;
+}
+
+.ex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+table{
+    margin: 0 auto;
+    text-align: center;
+}
+
+td{
+    padding: 10px;
+}
+
+.left{
+    text-align: left;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: #707070;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
