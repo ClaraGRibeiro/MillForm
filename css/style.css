@@ -194,3 +194,9 @@ footer{
     align-items: center;
     color: white;
 }
+a {
+    color: inherit;
+}
+a:hover {
+    opacity: 0.8;
+}

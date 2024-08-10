@@ -42,7 +42,7 @@
         </nav>
     </div>
     <footer>
-        <p>&copy; Clara Ribeiro - 2024</p>
+        <a href="http://lattes.cnpq.br/1683355695375761" target="_blank">Desenvolvido por Clara Ribeiro - 2024</a>
     </footer>
 </body>
 </html>
