@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Faça o teste EDPC (Escala de Disposições de Pensamento Crítico) em 8-12 minutos e avalie suas disposições críticas.">
+    <meta name="author" content="Clara Ribeiro">
+    <meta name="robots" content="index">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Teste EDPC</title>
+    <title>Teste EDPC - Avalie Suas Disposições de Pensamento Crítico</title>
 </head>
 <body>
     <div class="container">
