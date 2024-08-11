@@ -57,6 +57,43 @@ session_start();
             <a class="button-default" onclick="pie();">Pizza</a>
             <a class="button-default" onclick="polar();">Área Polar</a>
         </nav>
+        <table id="legend">
+            <tr>
+                <td style="background-color: violet; width:10px;"></td>
+                <td>-</td>
+                <td>Procura da verdade</td>
+            </tr>
+            <tr>
+                <td style="background-color: purple; width:10px;"></td>
+                <td>-</td>
+                <td>Mente aberta</td>
+            </tr>
+            <tr>
+                <td style="background-color: blue; width:10px;"></td>
+                <td>-</td>
+                <td>Mente analítica</td>
+            </tr>
+            <tr>
+                <td style="background-color: green; width:10px;"></td>
+                <td>-</td>
+                <td>Sistematicidade</td>
+            </tr>
+            <tr>
+                <td style="background-color: yellow; width:10px;"></td>
+                <td>-</td>
+                <td>Autoconfianca no raciocinio</td>
+            </tr>
+            <tr>
+                <td style="background-color: orange; width:10px;"></td>
+                <td>-</td>
+                <td>Curiosidade intelectual</td>
+            </tr>
+            <tr>
+                <td style="background-color: red; width:10px;"></td>
+                <td>-</td>
+                <td>Maturidade cognitiva</td>
+            </tr>
+        </table>
         <canvas id="chart"></canvas>
         <br><hr><br>
         <div class="buttons">
@@ -80,8 +117,14 @@ session_start();
             currentChart.destroy();
         }
     }
-
+    function showLegend(){
+        document.getElementById('legend').style.display = 'block';
+    }
+    function hideLegend(){
+        document.getElementById('legend').style.display = 'none';
+    }
     function bar(){
+        showLegend();
         destroyChart();
         currentChart = new Chart("chart", {
             type: "bar",
@@ -98,9 +141,14 @@ session_start();
                         ticks: {
                             beginAtZero: true
                         }
+                    }],
+                    xAxes: [{
+                        display: false
                     }]
                 },
-                legend: {display: false},
+                legend: {
+                    display: false
+                },
                 title: {
                     display: false
                 }
@@ -109,6 +157,7 @@ session_start();
     }
 
     function pie(){
+        showLegend();
         destroyChart();
         currentChart = new Chart("chart", {
             type: "pie",
@@ -122,12 +171,16 @@ session_start();
             options: {
                 title: {
                     display: false
+                },
+                legend: {
+                    display: false
                 }
             }
         });
     }
 
     function radar(){
+        hideLegend();
         destroyChart();
         currentChart = new Chart('chart', {
             type: 'radar',
@@ -140,28 +193,35 @@ session_start();
             },
             options: {
                 scale: {
-                ticks: {
-                    beginAtZero: true
-                }
-            },
+                    ticks: {
+                        beginAtZero: true
+                    }
+                },
                 legend: {
                     display: false
                 }
+
             }
         });
     }    
 
     function polar(){
+        showLegend();
         destroyChart();
         currentChart = new Chart('chart', {
             type: 'polarArea',
             data: {
-                labels: labels_name,
+                labels: '',
                 datasets: [{
                     label: 'Seu resultado',
                     backgroundColor: bar_colors,
                     data: data_points
                 }]
+            },
+            options: {
+                legend: {
+                    display: false
+                }
             }
         });
     }

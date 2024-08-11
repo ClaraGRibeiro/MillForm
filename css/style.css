@@ -36,6 +36,8 @@ p, a, label{
 }
 
 .start, .submit, .reset, .button-default{
+    background-color: white;
+    text-align: center;
     padding: 20px;
     border-radius: 10px;
     transition: 0.3s;
@@ -158,10 +160,6 @@ label{
     text-align: center;
 }
 
-#barChart, #radarChart, #pieChart{
-    margin: 0 auto;
-}
-
 .ex{
     display: flex;
     flex-direction: column;
@@ -170,17 +168,12 @@ label{
     gap: 20px;
 }
 
-table{
-    margin: 0 auto;
-    text-align: center;
-}
-
-td{
-    padding: 10px;
-}
-
 .left{
     text-align: left;
+}
+
+.center{
+    text-align: center;
 }
 
 footer{
@@ -199,4 +192,25 @@ a {
 }
 a:hover {
     opacity: 0.8;
+}
+
+
+@media screen and (max-width: 520px) {
+
+    canvas{
+        display: block;
+    }
+    .radio-label{
+        display: none;
+    }
+    .buttons{
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .start, .submit, .reset, .button-default{
+        width: 40%;
+    }
+
 }

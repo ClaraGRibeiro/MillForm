@@ -14,15 +14,7 @@
         <p><b>Descrição:</b> A EDPC, composta por 35 itens, pretende avaliar sete disposições do pensamento crítico: procura da verdade; mente aberta; mente analítica; sistematicidade; autoconfiança no raciocínio; curiosidade intelectual e maturidade cognitiva. Saiba mais sobre cada uma delas ao finalizar o teste.</p>
         <p><b>Instruções:</b> Leia atentamente cada uma das afirmações e marque o seu grau de concordância ou discordância no que respeita a cada uma delas, utilizando a seguinte escala:</p>
         <br>
-        <table>
-            <tr>
-                <td>Totalmente em desacordo</td>
-                <td>Em desacordo</td>
-                <td>Nem concordo nem discordo</td>
-                <td>De acordo</td>
-                <td>Totalmente de acordo</td>
-            </tr>
-        </table>
+        <p class="center">Totalmente em desacordo<br>Em desacordo<br>Nem concordo nem discordo<br>De acordo<br>Totalmente de acordo</p>
         <div class="form-group-ex">
             <div class="options">
                 <label class="radio-label">Discordo</label>
